@@ -1,0 +1,12 @@
+<h3>Your Cart</h3>
+
+<div *ngIf="getCart().length > 0">
+  {{ getCart().length }}
+  <div *ngFor="let book of getCart(); let i = index">
+    <p class="my-4 text-2xl">{{ i + 1 }}: {{ book.name }}</p>
+  </div>
+</div>
+<div *ngIf="getCart().length == 0">
+  यदि आप इतनी दूर आ गए हैं, तो कुछ खरीद लें
+</div>
+<div *ngIf="getCart().length > 9">क्या तुम इतनी किताबें पढ़ पाओगे</div>

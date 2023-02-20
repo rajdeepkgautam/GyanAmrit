@@ -1,0 +1,9 @@
+
+li{
+  list-style: none;
+  text-overflow: ellipsis;
+  width: 60%;
+  text-align: center;
+  cursor: pointer;
+
+}

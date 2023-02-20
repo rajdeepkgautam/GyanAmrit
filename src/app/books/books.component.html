@@ -1,0 +1,21 @@
+<h1>Programming Books List!</h1>
+<!-- <button (click)="this.isVisible = !this.isVisible">
+ { <span *ngIf="!isVisible"> Show Books</span>
+  <span *ngIf="isVisible"> Hide Books</span> we will use ng-container }
+
+  <ng-container *ngIf="!isVisible"> Show Books</ng-container>
+  <ng-container *ngIf="isVisible"> Hide Books</ng-container>
+</button> -->
+
+<!-- <input type="text" (input)="handleInput($event)"> -->
+<!-- <input type="text" [(ngModel)]="myName"/> -->
+
+<!-- <button (click)="isVisible = !isVisible">Toggle</button> -->
+
+
+<ul *ngIf="isVisible" class="flex flex-wrap justify-center">
+  <ng-container *ngFor="let singleBook of books; let i = index">
+    <app-book class="w-1/2 p-5 text-center" [book] = "singleBook"></app-book>
+  </ng-container>
+</ul>
+

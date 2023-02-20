@@ -1,0 +1,14 @@
+
+<div *ngFor="let book of books let i = index">
+
+  <li  class="flex border rounded-xl h-60" >
+    <!-- {{ i + 1 }} <br> -->
+    <img class="m-auto rounded-sm" [src]="book.image" alt="claenCodeImg" width="100px" />
+    <div class="m-auto">
+     <p class="text-lg">{{ book.name | titlecase}} by {{ book.author }}</p>
+      <p class="my-4">{{book.price | currency:"INR"}}</p>
+
+    </div>
+  </li>
+</div>
+
